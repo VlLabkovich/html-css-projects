@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #2F2E41;
+    line-height: 1.2;
+    letter-spacing: -0.02px;
+    min-width: 360px;
+}
+
+ul {
+    list-style: none;
+}
+
+header,
+footer {
+    background-color: #6C63FF;
+}
+
+header {
+    height: 80px;
+}
+
+.header-wrap {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+h1 {
+    font-weight: 700;
+    text-align: center;
+    font-size: 44px;
+    text-transform: uppercase;
+    margin-bottom: 70px;
+}
+
+.login-btn {
+    width: 120px;
+    height: 40px;
+    border-radius: 5px;
+    border: 2px solid #FFF;
+    background-color: transparent;
+    font-family: 'Roboto';
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.card {
+    border: 2px solid #E7E7E7;
+    width: 330px;
+    border-radius: 5px;
+    padding: 46px 20px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cards-wrap {
+    display: flex;
+    gap: 15px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.card h3 {
+    color: #2F2E41;
+    font-weight: 700;
+    text-align: center;
+    font-size: 22px;
+    text-transform: uppercase;
+}
+
+.card img {
+    margin: 40px 0 36px 0;
+    height: 200px;
+}
+
+.container {
+    max-width: 1170px; /*Не может быть максимум чем 1170px*/
+    width: 100%; /*Чтобы растягивался на всю ширину*/
+    padding: 0 15px;
+    margin: 0 auto;
+    border: 1px solid red;
+    height: 100%;
+}
+
+footer a {
+    color: #FFF;
+    font-weight: 16px;
+    font-size: normal;
+    text-transform: capitalize;
+    padding: 9px 15px;
+}
+
+.main-section {
+    padding: 100px 0 100px 0;
+}
+
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 36px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    h1 {
+        font-size: 28px;
+    }
+
+    header img {
+        width: 160px;
+    }
+}
