@@ -90,16 +90,37 @@ h1 {
     width: 100%; /*Чтобы растягивался на всю ширину*/
     padding: 0 15px;
     margin: 0 auto;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     height: 100%;
 }
 
-footer a {
+.footer-wrap {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    height: 80px;
+}
+
+.footer-wrap a {
     color: #FFF;
     font-weight: 16px;
     font-size: normal;
     text-transform: capitalize;
     padding: 9px 15px;
+    text-decoration: none;
+    align-items: baseline;  
+} 
+
+.footer-wrap li {
+    list-style: none;
+    align-items: center;
+    width: 150px;
+    height: 40px;
+}
+
+.footer-wrap img {
+    padding-right: 10px;
 }
 
 .main-section {
@@ -119,5 +140,11 @@ footer a {
 
     header img {
         width: 160px;
+    }
+}
+
+@media screen and (max-width: 630px) {
+    .footer-wrap {
+        height: 140px;
     }
 }
